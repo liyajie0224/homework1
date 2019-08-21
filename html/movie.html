@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>👓电影之夜</title>
+    <link rel="stylesheet" href="../css/movie.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+  </head>
+  <body>
+        <div class="search">
+                <p>>查询你想看的电影<</p>
+                <img src="../images/weiai.jpg" alt="" id="img">
+                <p>评分：<span id="average">8.2</span></p>
+                <p>导演：<span id="directors">贾木许</span></p>
+                <form >
+                    <input type="text" name="user" id="user">
+                    <input type="button" id="btn" value="搜索">
+                </form>
+        </div>
+    <script>
+            var user = document.getElementById("user");
+            var btn = document.getElementById("btn");
+            var img = document.getElementById("img")
+            var average = document.getElementById("average")
+            var directors = document.getElementById("directors")
+    
+            btn.onclick = function(){
+                var url="https://api.douban.com/v2/movie/search?q="+user.value+"&count=1";
+                $.ajax({
+                    url,
+                    type:"get",
+                    dataType:"jsonp",
+                    success:res=>{
+                        var averageData = res.subjects[0].rating.average;
+                        var imgUrl = res.subjects[0].images.small;
+                        var directorsName = res.subjects[0].directors.name;
+                        img.src=imgUrl;
+                        average.innerHTML = averageData;
+                        directors.innerHTML= directorsName;
+                    }
+    
+                })
+            }
+    </script>
+    <div class="content">
+        <p>Titanic 感</p>
+        <p>设计师说对不起，我没有把船造的再结实一点开始记录，到爬上浮在水里的门板上时，开始练习听力，倒回抄写。写完准备睡觉都要一点了。真正睡了的时候两点。七点十分，是还没写完的作业把我叫醒了。澡也没洗，但我觉得没那么重要了。看的明白，过的自由，没什么顾忌，没什么束缚那种人生在我身边发生的太少了。</p>
+        <p>他们两个那种看的明白，追求自由的感觉我很羡慕向往。露丝是因为强压和静心保护下的纯粹，家境殷实培养起来的无畏，杰克是孑然一身的潇洒，浪迹天涯过后的自信，他也会紧张，也会因为阶级问题受限，但是他也有通透，灵动，自由，…btw，真的很欣赏国外那个时候那些贵族阶级保持了起码的教养。比如说知道Rose和Jack跑了，还没订婚的未婚夫一开始还保持冷静，Rose的回答才让他进一步失控，他是混蛋，这个我一定要说，但是确实是保持了基本教养，虽然他们的整套礼仪有些压制限制天性。还有即使Jack是三等舱的穷酸人家，他赢来了船票，大家也不会嫌弃，是在附和，接话，他说关于make it count 的时候，不只是他眼中迸发的光芒，他的不卑不亢值得被记住和学习，大家都为他举杯认可的倾听者姿态，起码在交流期间保持互相尊重，彼此平等的态度也是我觉得很好的部分。</p>
+    <p>最后我随着女主推门而入，见证两人接受所有人祝福，这样安排，很戳心。随着钻石沉向巨轮，年轻的Rose也随着钻石去那艘船和她的救赎相遇了。两人接吻镜头上转对向华美的园屋顶，一如灾难降临，冰冷刺骨的水压倒式灌进来，压碎这个漂亮屋顶的时候的镜头角度。但我还是感叹Rose躺在门板上的时候望着的那片星空。自然永远是伟大的，伟大这种人类发明的词汇可能都贬低了自然。我也想看看那样的一片星空。但是我不想躺在水里的门板上，握着我爱的人，看着他生命的炽热被零度的水蛮横的掳走，不讲道理，不讲情面。所以我在想赶紧学习补充自救常识。</p>
+    </div>
+    <div class="jilu">
+        <img src="../images/jilu.png" alt="">
+    </div>
+    </body>
+</html>

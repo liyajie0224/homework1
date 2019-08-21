@@ -1,0 +1,50 @@
+.carousel{
+    width: 400px;
+    height: 500px;
+    /* border: 3px solid #232931;
+    border-radius: 10px; */
+}
+body{
+    background: url("../images/i背景1.png") no-repeat;
+    background-position: -110px 0;
+    height: 566px;
+    
+}
+.title{
+    width: 400px;
+    height: 50px;
+    /* text-align: center; */
+background: url("../images/样式.png") no-repeat;
+}
+.new a{
+    text-decoration: none !important;
+
+    color: #eeeeee;
+}
+
+.new{
+position: absolute;
+top: 15px;
+right: 420px;
+width: 320px;
+color: #eeeeee;
+}
+.shop{
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    width: 283px;
+    color: #eeeeee;
+}
+.shop a{
+    text-decoration: none !important;
+    color: #eeeeee;
+    display: block;
+    padding: 10px 0;
+}
+.shop p{
+    margin: 30px 0;
+}
+.shop p:nth-child(1){
+    margin-top: 0;
+}

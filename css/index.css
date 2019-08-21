@@ -1,0 +1,95 @@
+
+     *{margin:0;padding:0}
+    .head{
+        height:50px;
+        color: white;
+        background-color: pink;
+        line-height: 50px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title{
+        line-height: 50px;
+    }
+    .title:hover{
+        color:slategray;
+        cursor: pointer;
+    }
+    .container{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img{
+        width:500px;
+    }
+    .content{
+        margin-top:10px;
+    }
+    .content:hover{
+        color: pink;
+        cursor: pointer;
+    }
+    .about{
+        line-height: 50px;
+    }
+    .about:hover{
+        color:rgb(126, 121, 121);
+    }
+    li{
+        margin-top: 10px;
+    }
+    li:hover{
+        color:deeppink;
+        cursor: pointer;
+    }
+    dd,dt{
+        margin-top:10px;
+    }
+    dd:hover{
+        color:deeppink;
+        cursor: pointer;
+    }
+    dt:hover{
+        color:deeppink;
+        cursor: pointer;
+    }
+    .boby{
+        position: relative;
+    }
+    .enter{
+        height: auto;
+        width: auto;
+        position: absolute;
+        left: 90px;
+        top: 100px;
+        border: 2px solid #433d3c;
+        border-radius: 30px;
+        border-collapse: collapse;
+        opacity: .85;
+    }
+    .enter a{
+        display: inline-block;
+        line-height: 40px;
+        text-decoration: none;
+        color: #8d6449;
+        
+    }
+    .enter td{
+        border: 1px solid #433d3c;
+        text-align: center;
+        padding: 14px;
+    
+        
+    }
+   
+    /* 鼠标悬停 */
+    .enter a:hover{
+        color:
+        #f2a0a1;
+    }
+    .enter a:active{
+        color:
+        #ee827c;
+    }

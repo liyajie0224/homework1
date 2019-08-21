@@ -1,0 +1,271 @@
+html{background: #0C0A0A}
+.bg{
+    width: 1400px;
+    height: 990px;
+    box-sizing: border-box;
+    background: #0C0A0A;
+    background: url(../images/背景红1.png) no-repeat ;
+    background-attachment: fixed;
+    /* background-position: 30px 50px; */
+}
+.welcome{
+    width: 1400px;
+    color: aliceblue;
+    height:660px;
+    position: relative;   
+}
+.welcome img{
+   width: 100%;
+    position: absolute;
+    left: -10px;
+    top: -5px;
+}
+ .who {
+  height: 610px;
+  width: 100%; 
+   position: relative; 
+}
+.who img{
+    margin-top: -100px;
+}
+.content__title {
+  font-size: 300px !important;
+  padding: 300px 0 0 0;
+  color: #eeeeee !important;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+.content__subtitle {
+  color: #D8BCAC !important;
+  font-size:100px !important;
+  padding: 1px 30%;
+  margin-top: -299px;
+  font-family: 'Sacramento', cursive;
+  width: 576px;
+}
+
+/* 动画 */
+@keyframes animate{
+  0%{
+      background: #423f3c;
+      width: 100%;
+  }
+  25%{
+      background:#d8bcac;
+      /* width: 25% */
+      width: 100%;
+  }
+  50%{
+      background:#ad836d;
+      /* width: 50%; */
+      width: 100%;
+  }
+  70%{
+      background: #79573e;
+      /* width: 70%; */
+      width: 100%;
+  }
+  100%{
+      background: #d8bcac;
+      width: 100%;
+  }
+}
+.animate{
+  animation: animate 7s infinite;
+  width: 0;
+  height: 10px;
+  position: absolute;
+ bottom:0;
+}    
+.container {
+	width:1000px;
+	margin:-194px auto;
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:space-around
+}
+.container .boxItem {
+	width:150px;
+	height:150px;
+	position:relative;
+	margin:0 0 10px -159px
+}
+.container .boxItem>a {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+	z-index:10
+}
+.container .boxItem>a:first-of-type:hover,.container .boxItem>a:nth-child(2):hover,.container .boxItem>a:nth-child(3):hover,.container .boxItem>a:last-of-type:hover {
+	z-index:11;
+	-moz-clip-path:none;
+	-webkit-clip-path:none;
+	clip-path:none;
+	clip:auto
+}
+.container .boxItem>a:first-of-type {
+	-moz-clip-path:polygon(0 0,100% 0,50% 50%);
+	-webkit-clip-path:polygon(0 0,100% 0,50% 50%);
+	clip-path:polygon(0 0,100% 0,50% 50%);
+	clip:rect(0px,150px,120px,0px)
+}
+.container .boxItem>a:first-of-type:hover~.itemContentBox>img {
+	-moz-transform:rotateX(-90deg);
+	-webkit-transform:rotateX(-90deg);
+	transform:rotateX(-90deg)
+}
+.container .boxItem>a:first-of-type:hover~.itemContentBox .itemContent:first-of-type {
+	-moz-transform:rotateX(0);
+	-webkit-transform:rotateX(0);
+	transform:rotateX(0);
+	opacity:1
+}
+.container .boxItem>a:nth-child(2) {
+	-moz-clip-path:polygon(100% 0,50% 50%,100% 100%);
+	-webkit-clip-path:polygon(100% 0,50% 50%,100% 100%);
+	clip-path:polygon(100% 0,50% 50%,100% 100%);
+	clip:rect(0px,150px,150px,120px)
+}
+.container .boxItem>a:nth-child(2):hover~.itemContentBox>img {
+	-moz-transform:rotateY(-90deg);
+	-webkit-transform:rotateY(-90deg);
+	transform:rotateY(-90deg)
+}
+.container .boxItem>a:nth-child(2):hover~.itemContentBox .itemContent:nth-of-type(2) {
+	-moz-transform:rotateY(0);
+	-webkit-transform:rotateY(0);
+	transform:rotateY(0);
+	opacity:1
+}
+.container .boxItem>a:nth-child(3) {
+	-moz-clip-path:polygon(0 100%,50% 50%,100% 100%);
+	-webkit-clip-path:polygon(0 100%,50% 50%,100% 100%);
+	clip-path:polygon(0 100%,50% 50%,100% 100%);
+	clip:rect(120px,150px,150px,0px)
+}
+.container .boxItem>a:nth-child(3):hover~.itemContentBox>img {
+	-moz-transform:rotateX(90deg);
+	-webkit-transform:rotateX(90deg);
+	transform:rotateX(90deg)
+}
+.container .boxItem>a:nth-child(3):hover~.itemContentBox .itemContent:nth-of-type(3) {
+	-moz-transform:rotateX(0);
+	-webkit-transform:rotateX(0);
+	transform:rotateX(0);
+	opacity:1
+}
+.container .boxItem>a:last-of-type {
+	-moz-clip-path:polygon(0 0,50% 50%,0 100%);
+	-webkit-clip-path:polygon(0 0,50% 50%,0 100%);
+	clip-path:polygon(0 0,50% 50%,0 100%);
+	clip:rect(0px,30px,150px,0px)
+}
+.container .boxItem>a:last-of-type:hover~.itemContentBox>img {
+	-moz-transform:rotateY(90deg);
+	-webkit-transform:rotateY(90deg);
+	transform:rotateY(90deg)
+}
+.container .boxItem>a:last-of-type:hover~.itemContentBox .itemContent:last-of-type {
+	-moz-transform:rotateY(0);
+	-webkit-transform:rotateY(0);
+	transform:rotateY(0);
+	opacity:1
+}
+.container .boxItem .itemContentBox {
+	width:100%;
+	height:100%;
+	position:absolute
+}
+.container .boxItem .itemContentBox>img {
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:2;
+	transition:all .3s linear;
+	transform-origin:center center -75px
+}
+.container .boxItem .itemContentBox .itemContent {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#928f8f;
+	text-align:center;
+	transform-style:preserve-3d;
+	transform-origin:center center -75px;
+	color:#fff;
+	transition:all .3s linear;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	opacity:.2
+}
+.container .boxItem .itemContentBox .itemContent>span {
+	transform:translateY(60px)
+}
+.container .boxItem .itemContentBox .itemContent:first-of-type {
+	transform:rotateX(90deg)
+}
+.container .boxItem .itemContentBox .itemContent:nth-of-type(2) {
+	transform:rotateY(90deg)
+}
+.container .boxItem .itemContentBox .itemContent:nth-of-type(3) {
+	transform:rotateX(-90deg)
+}
+.container .boxItem .itemContentBox .itemContent:last-of-type {
+	transform:rotateY(-90deg)
+}
+.alink{
+    width: 100%;
+    height: 300px;
+}
+.link{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    position: relative;
+}
+.link a{
+display: inline-block;
+/* width: 100%; */
+}
+.link .dotOne{
+    position: absolute;
+    left: 282px;
+    bottom: 140px;
+}
+.link .dotTwo{
+    position: absolute;
+    right: 774px;
+    bottom: 140px;
+
+}
+.link .dotThree{
+    position: absolute;
+    right: 438px;
+    bottom: 140px;
+
+}
+.link span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d8bcac;
+}
+.tip{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-top: -120px;
+    
+}
+.tip p{
+    font-size: 12px;
+    color: #928f8f;
+    margin: 0 auto;
+    margin-right: 159px;
+    line-height: 20px;
+
+}

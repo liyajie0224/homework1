@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0}
+.user{
+    height: 150px;
+    background: #ebebeb;
+    border: 1px solid #e8e8e8; 
+    position: relative;  
+}
+.user>div{
+    float: left;
+    position: absolute;
+}
+.user img{
+    position: absolute;
+}
+.user img:nth-child(1){
+    width: 108px;
+    height: 109px;
+    left: 30px;
+    top: 50%;
+    margin-top: -54.5px;
+}
+.user:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.user-name>p:nth-child(1){
+    font-size: 18px;
+}
+.user-name>p:nth-child(2){
+    padding-top: 15px;
+}
+.user-name .grade{
+    padding-left: 10px;
+}
+.user-name .mine{
+    padding-left: 10px;
+}
+.user-name{
+    top: 20%;
+    left: 150px;
+}
+.smallline{
+    height: 95px;
+    width: 1px;
+    border-right:1px solid #cecece;
+    margin-left:  317px;
+    margin-top: 25px;
+}
+.weixin{
+    left: 350px;
+    top: 34%;
+}
+.phone{
+    left: 550px;
+    top: 34%;
+}
+.user-wx{
+    top: 35%;
+    left: 400px;
+    font-size: 13px;
+}
+.user-phone{
+    top: 35%;
+    left: 600px;
+    font-size: 13px;
+}
+.user a{
+    text-decoration: none;
+    color: #1ac0c0;
+    padding: 0 4px;
+}

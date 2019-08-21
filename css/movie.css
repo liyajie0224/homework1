@@ -1,0 +1,54 @@
+body{
+    background: url("../images/i背景.png") no-repeat;
+    
+    height:566px;
+    
+}
+img{
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.search p{
+    position: absolute;
+    top: 450px;
+    left: 30px;
+    color: #eeeeee;
+    font-size: 20px;
+   
+}
+.search p:nth-child(3){
+    top: 500px;
+}
+.search p:nth-child(1){
+    top: 0px;
+}
+form{
+    position: absolute;
+    top: 550px;
+    left: 30px;
+}
+.content{
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    width: 650px;
+    height: 700px;
+    /* height: ; */
+    background: url("../images/taitan.png") no-repeat;
+
+}
+.content p{
+    text-indent: 32px;
+    margin-top:20px;
+    font-size: 16px;
+    padding: 10px;
+}
+.jilu{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    margin-left: -60px;
+}
+

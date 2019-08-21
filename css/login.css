@@ -1,0 +1,368 @@
+*{margin:0;padding:0}
+/* 总字体 */
+body {
+    font-size: 14px;
+    font-family: arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+    color: #666666;
+}
+/* 小米图标 */
+.h-panel,.login-banner {
+    width: 1130px;
+    margin: 0 auto;   
+}
+.h-logo {
+    width: 200px;
+    height: 98px;
+    background: url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat;
+}
+/* 正文 */
+.login-outside{
+    width: 100%;
+    height: 524px;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/553c5e503fc83138c76bd7c17c1434db.jpeg);
+    background-position:top center;
+}
+/* 正文内容 */
+.login-banner{
+    height: 524px;   
+    position: relative;
+}
+/* 登录表 */
+.login{   
+    height: 494px;
+    width: 410px;
+    position: absolute;
+    top:30px;
+    right: 0;
+    background: #FFFFFF;
+    text-align: center;
+    color: #666666;   
+}
+/* nav */
+.nav-tabs a{   
+    display: inline-block;   
+    text-decoration: none;  
+    height: 24px;
+    line-height: 24px;
+    color: #666666;
+    margin:0 40px; 
+    cursor: pointer;
+}
+.nav-tabs{
+    margin: 27px 0 24px 0;
+    text-align: center;
+    font-size: 24px;
+    position: relative;    
+}
+.nav-tabs::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.line{
+    float: left;
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    right: 160px;
+    height: 24px;
+    border: 1px solid #E0E0E0;
+    margin: 8px 44px 0 39px;
+}
+/* .nav-tabs a.active 
+在小米的代码里扒的方法，这样可以让两个a标签在已设置过默认颜色后，
+被选中的a标签仍能变颜色*/
+.nav-tabs a.active{
+    color: #f56600;
+}
+/* form-content */
+/* ertab-link */
+.ertab-link{
+    width: 410px;
+    /* height: 225px; */
+    display: none;
+    position: relative;
+    text-align: center;  
+}
+.ertab-link img{
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+    margin-top: 79px;
+}
+/* custom-top-txt */
+.custom-top {
+    text-align: center;
+    padding-top: 14px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+    margin-top: 265px;
+    height: 30px;
+    color: #757575;
+}
+.custom-top span{
+    padding: 0 5px;
+    color: #ff6700;
+}
+/* tab-now */
+.tab-now{
+    width: 410px;
+    height: 225px;
+}
+.login-area{
+    width: 348px;
+    height: 225px;
+}
+
+/* 登陆输入 */
+.login-area{
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    width: 348px;
+    height: 48px;
+    margin-bottom: 14px;
+    display: inline-block;   
+}
+.login-user input{  
+    line-height: 22px;  
+    display: block;   
+    outline: none; 
+    font-size: 100%;   
+}
+.before{
+    width: 348px;
+    height: 10px;
+}
+.submit{
+    width: 348px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #FF6700;
+    border: none;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 10px; 
+    cursor: pointer;
+}
+.user,.pwd{
+    width: 316px;
+    height: 22px;
+    border: 1px solid #E0E0E0;
+    color: #9B9B9B;
+    padding: 13px 16px 13px 14px;
+}
+/* other-panel */
+.other-panel{
+    width: 348px;
+    margin-bottom: 30px;
+    height: 48px;
+}
+.other-panel a{
+    display: inline-block;
+    height: 14px;
+    font-size: 14px;
+    position: relative;
+}
+.smalllink a{
+    color: #ff6700;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.smalllink{
+    display: block;
+    float: left;
+}
+.revese{
+    width: 144px;
+    height: 14px;
+    float: left;
+    right: 31px;
+    position: absolute;
+}
+.revese::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.revese a{
+    display: inline-block;
+    text-decoration: none;
+    color: #999999;
+    margin-right: 7px;
+    cursor: pointer;
+  
+}
+.other-line{
+    float: left;
+    position: absolute;
+    top:2px;
+    right: 77px;
+    display: inline-block;
+    height: 14px;
+    border: 1px solid rgb(202, 196, 196);
+    margin: 0 4px;
+    
+}
+/* otherway-text */
+.box{
+    width: 348px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-bottom-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+}
+.text{
+    color: #bbb;
+    font-size: 14px;
+    width: 88px;
+    background: #FFFFFF;
+    height: 18px;
+    position: absolute;
+    bottom: 9px;
+    right: 50%;
+    margin-right: -44px;
+    text-align: center;
+}
+.otherway{
+    width: 348px;
+    height: 18px;
+    position: relative;
+    margin: 100px 0 0 0;
+}
+/* otherway-icon */
+.icon{
+    width: 348px;
+    height: 33px;
+    text-align: center;
+    padding: 3px;
+}
+.icon a{
+    display: inline-block;   
+    text-decoration: none;
+    width: 24px;
+    height:24px;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0 15px;
+}
+.icon i{
+    width:26px;
+    height:26px;
+    display: inline-block; 
+    position: absolute;
+    margin:auto;
+    top:0;left:0;bottom:0;right:0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 26px;
+    
+}
+.iconfont{
+   display: inline-block;
+    width: 26px;
+    height: 18px;
+    border: none;   
+}
+.icon-QQ1-copy-copy{
+    color: #ffffff;
+    background: #0288D1;
+
+} 
+.icon-weibo-copy{
+    background-color:#D32F2F;
+    color: #FFffff;
+}
+.icon-icon-zhifubao-copy-copy-copy-copy-copy-copy{
+    background-color:#00AAEE;
+    color: #FFffff;
+
+    width: 28px;
+}
+.icon-iconfontweixin-copy{
+    background-color:#00D20D;
+    color: #FFffff;
+}
+/* custom */
+.custom a{
+    text-decoration: none;
+    outline: none;
+    /* color: #757575; */
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+
+}
+.custom li{
+    float: left;
+    list-style: none;
+    text-align: center;
+
+}
+.custom{
+    color: #757575;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width:100%;
+    margin-top: 100px;
+    position: relative;
+}
+.select-list{
+    height: 14px;
+    line-height: 14px;
+    width: 345px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -172.5px;
+}
+.custom .lang-select-list{
+    text-align: center;
+    display: block;
+}
+.select-list a:hover {
+    color: #333;
+    cursor: pointer;
+}
+.easyfont{
+    color: #333;
+}
+.complex{
+    color: #757575;
+}
+.english{
+    color: #757575;
+}
+.normal{
+    color: #757575;
+}
+.self{
+    color: #757575;
+}
+/* intro */
+.intro a{
+    color: #757575;
+    padding: 0;
+}
+.intro{
+    padding: 20px 0;
+    text-align: center; 
+}
+
+
+
+
+
+
+

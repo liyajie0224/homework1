@@ -1,0 +1,156 @@
+body{
+    background: url("../images/入口背景2.png");
+    background-attachment: fixed;
+    /* cursor:url('http://www.5imoban.net/download/ico/pwsnorm.cur'),pointer; */
+}
+a{text-decoration: none ;}
+/* 作业栏 */
+.homework{
+    width: 995px;
+    height: 30px;
+    margin: 0 auto;
+}
+.homework p{
+    font-size: 13px;
+    color: #eeeeee;
+   
+}
+.homework a{
+    padding: 0 15px;
+    text-decoration: none ;
+    color:#eeeeee;
+    /* cursor:url('http://www.5imoban.net/download/ico/Horz_Ice.cur'),pointer;  */
+}
+/* 关注按钮 */
+.follow{
+    
+    height: 22px;
+    width: 99px;
+    position: relative;
+}
+.follow button{
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: #03191F;
+    height: 22px;
+    width: 88px;
+    outline: none;
+    position: fixed;
+    top: 33px ; 
+    right: 0;
+}
+.follow .btnOne{
+    position: fixed;
+    top: 5px !important;
+    right: 0 ;
+}
+.follow .firstpage{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.follow a{
+    font-size: 12px;
+    line-height: 15px;
+    color: #eeeeee;
+    outline: none;
+}
+.follow em{
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+   font-style: normal;
+   line-height: 22px;
+}
+.follow .iconOne{
+    display: inline-block;
+    background: url("../images/icon减号.png");
+    width: 13px;
+    height: 13px;
+    margin-right: 55px;
+}
+.follow .iconTwo{
+    display: inline-block;
+    background: url("../images/icon首页.png");
+    width: 16px;
+    height: 16px;
+    margin-right: 55px;
+}
+/* 海浪logo */
+.logo{
+    width: 500px;
+    height: 500px;
+    background: url("../images/海浪.png");
+    margin: -20px auto 0 auto;
+}
+.personal{
+    height: 30px;
+    width: 204px;
+    margin: -68px auto 0 auto;
+}
+.personal p{
+    font-size: 13px;
+    color: #eeeeee;
+}
+/* line动画 */
+@keyframes animate{
+    0%{
+       background: #113f67;
+    }
+    25%{
+        background: #34699a;
+        width:25%;
+    }
+    50%{
+        background: #408ab4;
+        width:50%;
+    }
+    70%{
+        background: #65c6c4;
+        width:70%;
+    }
+    100%{
+        background:#113f67;
+        width:100%;
+    }
+}
+.line{
+    margin: 100px 0 ;
+    padding: 0 50%;
+    animation: animate 7s infinite;
+    width:0;
+    height:1px;
+}
+/* nav */
+.nav a{
+    display: inline-block;
+    border-radius: 30px 0 30px 0;
+    text-decoration: none;
+    
+    background: #232931;
+}
+.nav p{
+    width: 200px;
+    color: #eeeeee;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+/* .nav{
+    background: rgba(78,79,81 ,.6)
+} */
+/* iframe */
+iframe{
+    float: left;
+    width: 100%;
+    height: 580px;
+
+    box-sizing: border-box;
+    border: 1px solid #232931;
+    background: rgba(78,79,81 ,.6)
+    /* background: #F0F0F0; */
+}

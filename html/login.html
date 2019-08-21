@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="../images/icon-xiaomi.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <title>小米帐号-登录</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1066445_yt50xpcoh5q.css">
+</head>
+<body>
+    <!-- 小米图标 -->
+    <div class="h-panel">
+        <div class="h-logo">
+            <a href="//www.mi.com/index.html" target="_parent" ></a>
+        </div>
+    </div>
+    <!-- 正文背景 -->
+    <div class="login-outside">
+        <!-- 正文内容 -->
+        <div class="login-banner">
+            <!-- 登录表 -->
+            <div class="login">
+                <!-- nav -->
+                <div class="nav-tabs">
+                    <!-- 账号登录 navtab-link-now -->
+                    <a class=" active" href="#">帐号登录</a>
+                    <span class="line"></span>
+                    <!-- class="navtab-link" -->
+                    <a  href="#">扫码登录</a>
+                </div>
+                <!-- form-content -->
+                <div class="form-content">
+                    <!-- ertab-link -->
+                    <div class="ertab-link">
+                        <div class="img">
+                            <img src="../images/erwei.png" alt="">
+                        </div>
+                        <div class="custom-top">
+                            <p>
+                                使用
+                                <span>小米商城APP</span>
+                                扫一扫
+                            </p>
+                            <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                        </div>                         
+                    </div>
+                    <!-- tab-now -->
+                    <div class="tab-now">
+                        <div class="before"></div>
+                        <div class="login-area">
+                        <!-- 登录输入 -->
+                        <form class="login-user">
+                            <div>
+                                <label for="user">
+                                    <input class="user" type="text" placeholder="邮箱/手机号码/小米ID" id="user">
+                                 </label>
+                            </div>
+                            <div>
+                                <label for="pwd">
+                                    <input class="pwd" type="password" placeholder="密码" id="pwd">
+                                </label>
+                            </div>
+                            <div>
+                                <input class="submit" type="submit" value="登录">
+                            </div>
+                        </form>
+                        <!-- other-panel -->
+                        <div class="other-panel">
+                            <span class="smalllink"> 
+                                <a href="#">手机短信登录/注册</a>
+                            </span>
+                            <div class="revese">
+                                <a href="#">立即注册  </a>
+                                <span class="other-line"></span>
+                                <a href="#">忘记密码？</a>
+                            </div>
+                        </div>
+                        <!-- otherway-text -->
+                        <div class="otherway">
+                            <div class="box"></div>
+                            <div class="text">
+                                其他方式登录
+                            </div>
+                        </div>
+                        <!-- otherway-icon -->
+                        <div class="icon">
+                            <a href="#"><i class="iconfont icon-QQ1-copy-copy"></i></a>
+                            <a href="#"><i class="iconfont icon-weibo-copy"></i></a>
+                            <a href="#"><i class="iconfont icon-icon-zhifubao-copy-copy-copy-copy-copy-copy"></i></a>
+                            <a href="#"><i class="iconfont icon-iconfontweixin-copy"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!-- bottom -->
+    <div class="custom">
+            <div class="select-list">
+                <ul class="lang-select-list">
+                    <li>
+                        <a class="easyfont" href="#">简体</a>
+                        |
+                    </li>
+                    <li>
+                        <a class="complex" href="#">繁体</a>
+                        |
+                    </li>
+                    <li>
+                        <a class="english" href="#">English</a>
+                        |
+                    </li>
+                    <li>
+                        <a class="normal" href="#">常见问题</a>
+                        |
+                    </li>
+                    <li>
+                        <a class="self" href="#">隐私政策</a>                           
+                    </li>
+                </ul>
+            </div>
+            <p class="intro">
+                小米公司版权所有-京ICP备10046444-
+                <a href="#">
+                    <span><img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" alt="">
+                    </span>
+                    京公网安备11010802020134号
+                </a>
+                -京ICP证110507号
+            </p>
+
+        </div>
+    <script>
+        $(".nav-tabs a").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            // 获取参数并打印
+            console.log($(this).index())
+            // eq是块的意思，index是参数的意思
+            // $(".form-content>div").eq($(this).index()).show().siblings().hide()
+            if($(this).index()==0){
+                $(".tab-now").show()
+                $(".ertab-link").hide()
+            }
+            else{
+                $(".ertab-link").show().siblings().hide()
+
+            }
+        })
+    </script>
+</body>
+</html>
